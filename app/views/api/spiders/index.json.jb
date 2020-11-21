@@ -1,1 +1,11 @@
-@message: ("hello")
+#{ message: "hello" }
+
+@spiders.map do |spider|
+  {
+    id: spider.id,
+    spiderman: spider.spiderman,
+    year: spider.year,
+    maryjane: spider.maryjane,
+    villian: spider.villian,
+  }
+end
