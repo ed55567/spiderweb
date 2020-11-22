@@ -29,4 +29,10 @@ class Api::SpidersController < ApplicationController
     @spiders.save
     render "show.json.jb"
   end
+
+  def destroy
+    @spiders = Spider.find_by(id: params[:id])
+    @spiders.destroy
+    render json: { message: "Spiderman final web removed" }
+  end
 end
