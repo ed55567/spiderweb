@@ -21,12 +21,12 @@ class Api::SpidersController < ApplicationController
   end
 
   def update
-    @spider = Spider.find_by(id: params[:id])
-    @spider.spiderman = params[:spiderman] || @spider.spiderman
-    @spider.year = params[:year] || @spider.year
-    @spider.maryjane = params[:maryjane] || @spider.maryjane
-    @spider.villian = params[:villian] || @spider.villian
-    @spider.save
+    @spiders = Spider.find_by(id: params[:id])
+    @spiders.spiderman = params[:spiderman]
+    @spiders.year = params[:year]
+    @spiders.maryjane = params[:maryjane]
+    @spiders.villian = params[:villian]
+    @spiders.save
     render "show.json.jb"
   end
 end

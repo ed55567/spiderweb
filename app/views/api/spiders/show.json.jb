@@ -1,7 +1,8 @@
 {
-  id: @spider.id,
-  spiderman: @spider.spiderman,
-  year: @spider.year,
-  maryjane: @spider.maryjane,
-  villian: @spider.villian,
+  id: @spiders.id,
+  spiderman: @spiders.spiderman,
+  year: @spiders.year,
+  maryjane: @spiders.maryjane,
+  villian: @spiders.villian,
+#"message": "in the show",
 }
