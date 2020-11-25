@@ -7,5 +7,7 @@
     year: spider.year,
     maryjane: spider.maryjane,
     villian: spider.villian,
+    director: spider.director,
+    description: spider.description,
   }
 end

@@ -4,5 +4,8 @@
   year: @spiders.year,
   maryjane: @spiders.maryjane,
   villian: @spiders.villian,
+  director: @spiders.director,
+  description: @spiders.all_spidermen_list,
+
 #"message": "in the show",
 }

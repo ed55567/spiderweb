@@ -11,8 +11,12 @@ class Api::SpidersController < ApplicationController
       maryjane: params[:maryjane],
       villian: params[:villian],
     )
-    @spider.save
-    render "show.json.jb"
+
+    if @spider.save
+      render "show.json.jb"
+    else
+      render json: { errors: @product.errors.full_messages }
+    end
   end
 
   def show
@@ -26,6 +30,8 @@ class Api::SpidersController < ApplicationController
     @spiders.year = params[:year]
     @spiders.maryjane = params[:maryjane]
     @spiders.villian = params[:villian]
+    @spiders.director = params[:director]
+    @spiders.description = params[:description]
     @spiders.save
     render "show.json.jb"
   end
