@@ -1,0 +1,2 @@
+class Spiderman < ApplicationRecord
+end

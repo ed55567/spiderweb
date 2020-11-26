@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Spider.create!(
+  Peter_Parker_Tobey: 2002,
+  number_of_villians: 1,
+  name: "Tobey",
+)
+
+Spider.create!(
+  Peter_Parker_Andrew: 2014,
+  number_of_villians: 1,
+  name: "Andrew",
+)
+
+Spider.create!(
+  Peter_Parker_Tom: 2019,
+  number_of_villians: 3,
+  name: "Tom",
+)
