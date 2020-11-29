@@ -1,9 +1,18 @@
 class Api::SpidersController < ApplicationController
   def index
     # p Rails.application.credentials.news_api
-    @spiders = HTTP.get("http://newsapi.org/v2/everything?q=apple&from=2020-11-24&to=2020-11-24&sortBy=popularity&apiKey=#{Rails.application.credentials.news_api[:api_key]}").parse
-    #@spiders = Spider.all
+    #@spiders = HTTP.get("http://newsapi.org/v2/everything?q=apple&from=2020-11-24&to=2020-11-24&sortBy=popularity&apiKey=#{Rails.application.credentials.news_api[:api_key]}").parse
+    @spiders = Spider.all
     render "index.json.jb"
+    
+  end
+
+  def show 
+    @spider = Spider.find_by(id: params[:id])
+    render 'show.html.erb'
+
+  def new
+    render "new.html.erb"
   end
 
   def create

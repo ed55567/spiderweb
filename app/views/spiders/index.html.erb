@@ -1,3 +1,10 @@
-<h1>I am Spiderman</h1>
+<h1>I'm am spiderman</h1>
+
+<% @spiders.each do |spider| %>
+   <h1>name: <a href="/spiders/<%= spider.id %>"><%= spider.name %></a></h1>
+   <p>number_of_villians: <%= spider.number_of_villians %></p>
+   <p>peter_parker: <%= spider.peter_parker %></p>
+   <hr>
+ <% end %> 
 
 

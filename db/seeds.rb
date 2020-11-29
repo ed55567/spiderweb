@@ -7,19 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Spider.create!(
-  Peter_Parker_Tobey: 2002,
+  peter_parker: 2002,
   number_of_villians: 1,
   name: "Tobey",
 )
 
 Spider.create!(
-  Peter_Parker_Andrew: 2014,
+  peter_parker: 2014,
   number_of_villians: 1,
   name: "Andrew",
 )
 
 Spider.create!(
-  Peter_Parker_Tom: 2019,
+  peter_parker: 2019,
   number_of_villians: 3,
   name: "Tom",
 )

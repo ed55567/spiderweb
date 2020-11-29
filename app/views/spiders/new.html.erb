@@ -1,0 +1,10 @@
+<h1>Here is a form</h1>
+
+
+ <form action="/spiders" method="post">
+   <p>Name: <input type="text" name="name"></p>
+   <p>Peter_Parker: <input type="text" name="peter_parker"></p>
+   <p>Villian count: <input type="text" name="number_of_villians"></p>
+   <input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+   <p><input type="submit" value="Make a Spiderman"></p>
+ </form>

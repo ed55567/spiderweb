@@ -3,13 +3,15 @@ Rails.application.routes.draw do
   # get "/photos" => "photos#index"
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
-  namespace :api do
-    #get "/spiders" => "spiders#index"
-    #get "/spiders/:id" => "spiders#show"
-    #post "/spiders" => "spiders#create"
-    #patch "/spiders/:id" => "spiders#update"
-    #delete "/spiders/:id" => "spiders#destroy"
+  #namespace :api do
+  #get "/spiders" => "spiders#index"
+  #get "/spiders/:id" => "spiders#show"
+  #post "/spiders" => "spiders#create"
+  #patch "/spiders/:id" => "spiders#update"
+  #delete "/spiders/:id" => "spiders#destroy"
 
-    get "/spiders" => "spiders#index"
-  end
+  get "/spiders" => "spiders#index"
+  get "/spiders/new" => "spiders#new"
+  get "/spiders/:id" => "spiders#show"
+  #end
 end
